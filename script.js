@@ -1,13 +1,23 @@
 var inputtext= document.getElementById("input");
 var send = document.getElementById("send");
-// var tables = document.getElementById("show-chat");
+var emoji = document.getElementById("emoji");
+var three_dot1 = document.getElementById("three_dot1");
+// var pop_for_threedot = document.getElementById("pop_for_threedot");
+var namevalue = document.getElementById("namevalue");
+var contact_list=document.querySelector(".contact-list")
+var contact_name=document.querySelector("#titlenm")
+var one=document.querySelector(".one")
+var two=document.querySelector(".two")
+var menu2=document.querySelector("#menu2")
+var search_icon=document.querySelector("#search_icon")
+var search_box_hidden=document.querySelector(".search-box-hidden")
 
 
 
 var list1=[];
 // var list2=[];
 let n=0;
-let x=0;
+let x=1;
 send.onclick =  function AddRow(){
     let addRow=document.getElementById("show-chat");
     let newRow=addRow.insertRow(n);
@@ -22,6 +32,57 @@ send.onclick =  function AddRow(){
     // cell2.innerHTML = list2[x]
 
     inputtext.value="";
+    console.log(n);
+    n++;
+    x++;
 }
-n++;
-x++;
+// n++;
+// x++;
+
+emoji.onclick = function sticker(){
+    alert("Kindly check the relevent code for your Emoji and paste the code in the text area . Also ADD (&#) before the code")
+}
+
+
+contact_list.onclick= function titlename(){
+    console.log(namevalue.textContent);
+    contact_name.textContent = namevalue.textContent;
+
+}
+
+
+three_dot1.onclick = function(){
+    console.log("menu option clicked");
+    if(one.style.display =="none"){
+        console.log("if targated");
+        one.style.display="block";
+        three_dot1.style.color="white"
+    }
+    else{
+        one.style.display="none";
+        console.log("else targate");
+        three_dot1.style.color="black";
+    }
+}
+menu2.onclick = function(){
+    if(two.style.display =="none"){
+        two.style.display="block";
+        menu2.style.color="white";
+    }
+    else{
+        two.style.display="none";
+        menu2.style.color="black";
+    }
+}
+
+
+search_icon.onclick = function(){
+    if(search_box_hidden.style.display=="none"){
+        search_box_hidden.style.display="block";
+        search_icon.style.color="white";
+    }
+    else{
+        search_box_hidden.style.display="none";
+        search_icon.style.color="black";
+    }
+}

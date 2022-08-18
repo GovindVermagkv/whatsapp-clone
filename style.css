@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Ubuntu:wght@300&display=swap');
+
+
 *{
     margin: 0%;
     padding: 0%;
     text-transform: capitalize;
+    font-family:lato;
+    
 }
 #till{
     font-size:10px;
@@ -74,6 +79,39 @@
 
 }
 
+.search-box-hidden{
+    display: none;
+}
+
+.search-icon2{
+    background-color: rgba(255, 255, 255, 0.344);
+    padding: 5px 40px 10px 5px;
+    border-radius: 15px;
+    width: 15%;
+    position: absolute;
+    top: 2%;
+    left: 70%;
+}
+
+.search-icon2 i{
+    margin-left: 10px;
+    color: black;
+}
+
+.search-icon2 input{
+    border: none;
+    outline: none;
+    line-height: 25px;
+    margin-left: 20px;
+    background-color:transparent;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+
+
 .contact-box-fixed{
     position: fixed;
     width: 39%;
@@ -91,6 +129,7 @@
     margin-bottom: 1.5px;
     padding: 7px 0px;
     transition: .7s;
+    cursor: pointer;
 
 }
 
@@ -103,6 +142,7 @@
 }
 .title{
     color: rgb(48, 43, 43);
+    width: 200px;
 }
 
 .chat-box-fixed{
@@ -227,6 +267,93 @@ a{
     border-radius: 10px;
 } */
 
+.one{
+display: none;
+}
+.pop_for_threedot{
+    background-color: white;
+    width: fit-content;
+    position: absolute;
+    top: 7%;
+    left: 23%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pop_for_threedot li{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+.pop_for_threedot li a{
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: .4s;
+}
+.pop_for_threedot li a:hover{
+    color: aqua;
+}
+
+.two{
+    display: none;
+}
+#menu2:hover{
+    color: white;
+}
+
+.chat-menu2{
+    background-color: white;
+    width: fit-content;
+    position: absolute;
+    top: 7%;
+    right: 2%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.chat-menu2 li{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+.chat-menu2 li a{
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: .4s;
+}
+.chat-menu2 li a:hover{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -292,8 +419,17 @@ a{
     width: 40px;
     height:40px;
 }
+.title{
+    width: 100px;
+}
 .title h3,p{
     font-size: 10px;
 }
 
+}
+
+@media (min-width:1200px) {
+    .title{
+        margin-left: -120px;
+    }
 }

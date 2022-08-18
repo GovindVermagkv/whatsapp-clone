@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <title>Whatsapp</title>
     <link rel="icon" href="wp.png" id="till">
 </head>
@@ -21,7 +24,7 @@
                     <div class="contact-box-icon">
                         <i class="fa fa-circle-o"></i>
                         <i class="fa fa-comment"></i>
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v" id="three_dot1"></i>
                     </div>
                 </nav>
                 <div class="search-area">
@@ -36,7 +39,7 @@
                 <div class="contact-list">
                     <img src="govind.png" alt="">
                     <div class="title">
-                        <h3>govind verma &#128540</h3>
+                        <h3 id="namevalue">govind verma &#128540</h3>
                         <p>rajesh : kaise ho</p>
                     </div>
                     <p>10:06 pm</p>
@@ -97,7 +100,7 @@
                     </div>
                     <p>10:06 pm</p>
                 </div>
-               
+
                 <div class="contact-list">
                     <img src="govind.png" alt="">
                     <div class="title">
@@ -311,11 +314,11 @@
                 <div class="chat-box-nav">
                     <div class="chat-box-nav-info">
                         <img src="govind.png" alt="">
-                        <h3 id="name">verma ji &#128540</h3>
+                        <h3 id="name"><span id="titlenm"></span> &#128540</h3>
                     </div>
                     <div class="chat-box-nav-icons">
-                        <i class="fa fa-search"></i>
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-search" id="search_icon"></i>
+                        <i class="fa fa-ellipsis-v" id="menu2"></i>
                     </div>
                 </div>
             </div>
@@ -331,7 +334,7 @@
 
             <footer>
                 <div class="footer-icons">
-                    <h1><a href="https://www.w3schools.com/charsets/ref_emoji.asp">&#128540</a></h1>
+                    <h1><a href="https://www.w3schools.com/charsets/ref_emoji.asp" id="emoji">&#128540</a></h1>
                     <i class="fa fa-paperclip" id="folders"></i>
                     <input type="text" id="input" placeholder="type a message">
                     <i class="fa fa-send" id="send" tabindex="-1"></i>
@@ -340,7 +343,35 @@
             </footer>
         </div>
     </div>
-<script src="script.js"></script>
+
+    <div class="one">
+        <div class="pop_for_threedot">
+            <li><a href="#">new group</a></li>
+            <li><a href="#">profile</a></li>
+            <li><a href="#">catalog</a></li>
+            <li><a href="#">starred messages</a></li>
+            <li><a href="#">settings</a></li>
+            <li><a href="#">log out</a></li>
+        </div>
+    </div>
+    <div class="two">
+        <div class="chat-menu2">
+            <li><a href="#">new group</a></li>
+            <li><a href="#">profile</a></li>
+            <li><a href="#">catalog</a></li>
+            <li><a href="#">starred messages</a></li>
+            <li><a href="#">settings</a></li>
+            <li><a href="#">log out</a></li>
+        </div>
+    </div>
+
+    <div class="search-box-hidden">
+        <div class="search-icon2">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="search or start new chat">
+        </div>
+    </div>
+    <script src="script.js"></script>
 
 </body>
 
