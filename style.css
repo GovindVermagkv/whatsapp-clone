@@ -27,6 +27,13 @@
     width: 60%;
     /* background-color: green; */
 }
+
+
+/* -----------------------------------------------contact box zone ------------------------------------------------------- */
+
+
+
+
 .contact-box-nav{
     display: flex;
     justify-content: space-around;
@@ -143,7 +150,20 @@
 .title{
     color: rgb(48, 43, 43);
     width: 200px;
+    transition: .3s;
 }
+.title>h3{
+    transition: .3s;
+}
+.title >h3:hover{
+    padding-left: 10px;
+}
+
+
+/* -------------------------------------------------chat area zone ------------------------------------------------------------------ */
+
+
+
 
 .chat-box-fixed{
     position: fixed;
@@ -199,7 +219,7 @@ footer{
     padding: 10px 20px;
     border-radius: 7px;
     font-size: 20px;
-    width: 50%;
+    width: 65%;
 }
 
 .footer-icons i{
@@ -261,13 +281,9 @@ a{
     border-radius: 10px;
     
 }
-/* #you{
-    text-align: right;
-    padding-right: 40px;
-    background-color: rgb(116, 186, 116);
-    border-radius: 10px;
-} */
 
+
+/* ---------------------------------------------------menu click on---------------------- */
 .one{
 display: none;
 }
@@ -292,10 +308,17 @@ display: none;
     color: gray;
     letter-spacing: 1px;
     font-weight: bold;
+    transition: .3s;
+}
+
+.pop_for_threedot li a:hover{
+    margin-left: 5px;
 }
 .pop_for_threedot li:hover{
     background-color:#d1d7dba0;
 }
+
+/* ---------------------------------menu click 2------------------------------ */
 
 .two{
     display: none;
@@ -325,20 +348,178 @@ display: none;
     color: gray;
     letter-spacing: 1px;
     font-weight: bold;
-    transition: .4s;
+    transition: .3s;
+}
+.chat-menu2 li a:hover{
+    margin-left: 5px;
 }
 .chat-menu2 li:hover{
     background-color:#d1d7dba0;
 }
 
 
+/* -------------------------profil show----------------------------- */
+
+.profile{
+    position: absolute;
+    top: 15.5%;
+    width: 38%;
+    height: 81.5vh;
+    background-color: white;
+    transition: .9s;
+    overflow: scroll;
+    display: none;
+}
+.profile-head{
+    background-color: rgb(43, 158, 43);
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.profile i{
+   margin:0px 20px;
+   font-size: 25px;
+   color: white;
+   transition: .3s;
+}
+.profile i:hover{
+    color: blue;
+}
+.profile h2{
+    color: white;
+    letter-spacing: 1px;
+}
+.picture-area{
+    background-color: #d1d7db;
+    display: flex;
+    height:150px;
+    justify-content: center;
+}
+.picture-area img{
+ width: 150px;
+ height: 150px;
+ position: relative;
+ top: 30%;
+}
+.picture-area i{
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+    align-self: flex-end;
+    color: green;
+    cursor: pointer;
+}
+.profile-edit-area{
+    margin-top: 50px;
+}
+.profile-area-list{
+    display: flex;
+    justify-content: space-around;
+    transition: .4s;
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+.profile-area-list:hover{
+    background-color: rgba(170, 169, 169, 0.423);
+}
+
+.profile-user-info{
+    width: 40%;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.profile-edit-area i{
+    color:black;
+    cursor: pointer;
+}
+#profile-about{
+    position: relative;
+    right: 10%;
+    width: fit-content;
+}
+#profile-info-about i{
+   font-size: 30px;
+   margin-top: 10px;
+}
 
 
+/* ---------settings------------------------------------------------ */
 
 
+.settings{
+    position: absolute;
+    top: 15.5%;
+    width: 38%;
+    height: 82vh;
+    background-color: white;
+    transition: .9s;
+    display: none;
+    overflow: scroll;
+}
+.settings-head{
+    background-color: rgb(43, 158, 43);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.setting-info-area{
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+}
+.setting-info-area img{
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px;
+}
+.st-head{
+    color: white;
+    font-size: 30px;
+}
 
-
-
+.settings i{
+   margin:0px 20px;
+   font-size: 25px;
+   color: white;
+   transition: .3s;
+}
+.settings i:hover{
+    color: blue;
+}
+.settings-edit-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    margin-bottom: 1px;
+    transition: .3s;
+}
+.settings-edit-area:hover{
+    background-color: rgba(170, 169, 169, 0.423);
+}
+.settings-edit-area i{
+    color: gray;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.heading{
+    width: 300px;
+    position: relative;
+    right:20%;
+}
+.settings-heading{
+    color: rgb(63, 61, 61);
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+.settings-heading:hover{
+    padding-left: 10px;
+}
 
 
 
@@ -478,6 +659,17 @@ a{
         left: 14%;
         padding: 10px;
         border-radius: 10px;
+    }
+
+    .profile{
+        width: 29%;
+    }
+
+    .profile-user-info{
+        margin-left: -70px;
+    }
+    .settings{
+        width: 29%;
     }
     
 }

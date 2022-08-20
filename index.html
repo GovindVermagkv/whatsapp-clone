@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Ubuntu:wght@500&display=swap"rel="stylesheet">
     <title>Whatsapp</title>
     <link rel="icon" href="wp-removebg-preview.png" id="till">
 </head>
@@ -18,6 +18,130 @@
 
     <div class="main">
         <div class="contact-box">
+
+            <!--------------profile start---------------------------------  -->
+
+            <div class="profile">
+                <div class="profile-head">
+                    <i class="fa fa-arrow-left" id="hide_profile"></i>
+                    <h2>profile</h2>
+                </div>
+
+                <div class="picture-area">
+                    <img src="govind.png" alt="">
+                    <i class="fa fa-pencil"></i>
+                </div>
+                <div class="profile-edit-area">
+                    <div class="profile-area-list" id="profile-info-about">
+                        <i class="fa fa-user"></i>
+                        <div class="profile-user-info" id="profile-about">
+                            <h1>govind verma</h3>
+                                <p>software developer </p>
+                        </div>
+                    </div>
+                    <div class="profile-area-list">
+                        <i class="fa fa-star"></i>
+                        <div class="profile-user-info">
+                            <h3>status</h3>
+                            <p id="status" contenteditable="false">Lorem ipsum dolor se </p>
+                        </div>
+                        <i class="fa fa-pencil" id="status-icon"></i>
+                    </div>
+                    <div class="profile-area-list">
+                        <i class="fa fa-phone"></i>
+                        <div class="profile-user-info">
+                            <h3>phone number</h3>
+                            <p id="mobile" contenteditable="false">7307220229</p>
+                        </div>
+                        <i class="fa fa-pencil" id="mobile-icon"></i>
+                    </div>
+                    <div class="profile-area-list">
+                        <i class="fa fa-envelope"></i>
+                        <div class="profile-user-info">
+                            <h3>email address</h3>
+                            <p id="email" contenteditable="false">Sonygovind.gkv740@gmail.com </p>
+                        </div>
+                        <i class="fa fa-pencil" id="email-icon"></i>
+                    </div>
+                    <div class="profile-area-list">
+                        <i class="fa fa-globe"></i>
+                        <div class="profile-user-info">
+                            <h3>website</h3>
+                            <p id="website" contenteditable="false">www.locomart.com </p>
+                        </div>
+                        <i class="fa fa-pencil" id="website-icon"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-----------------------------------settings start-----------------------  -->
+
+            <div class="settings">
+                <div class="settings-head">
+                    <i class="fa fa-arrow-left" id="hide_settings"></i>
+                    <h2 class="st-head">settings</h2>
+                </div>
+                <div class="setting-info-area">
+                    <img src="govind.png" alt="">
+                    <div class="setting-abouts">
+                        <h1>govind verma</h1>
+                        <p>hey there! i am using whatsapp clone</p>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-bell"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">notifications</h2>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-lock"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">privacy</h2>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-shield"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">security</h2>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-user"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">theme</h2>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-image"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">chat wallpaper</h2>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-user"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">request account info</h2>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-keyboard-o"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">keyboard shortcut</h2>
+                    </div>
+                </div>
+                <div class="settings-edit-area">
+                    <i class="fa fa-question-circle"></i>
+                    <div class="heading">
+                        <h2 class="settings-heading">help</h2>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- ---------------------------contact box zone --------------------------- -->
+
             <div class="contact-box-fixed">
                 <nav class="contact-box-nav">
                     <img src="govind.png" alt="">
@@ -305,7 +429,7 @@
 
         </div>
 
-
+        <!-- ------------------------chat area start----------------------- -->
 
         <div class="chat-box">
 
@@ -344,16 +468,23 @@
         </div>
     </div>
 
+    <!-- ---------------menu 1------------------------- -->
+
     <div class="one">
         <div class="pop_for_threedot">
             <li><a href="#">new group</a></li>
-            <li><a href="#">profile</a></li>
+            <li><a href="#" id="profile_show">profile</a></li>
             <li><a href="#">catalog</a></li>
             <li><a href="#">starred messages</a></li>
-            <li><a href="#">settings</a></li>
-            <li><a href="https://www.google.com/" onclick="alert('Successfully loged out. Thanxx for using Whatsapp Clone by :) Govind verma (:')">log out</a></li>
+            <li><a href="#" id="settings">settings</a></li>
+            <li><a href="https://www.google.com/"
+                    onclick="alert('Successfully loged out. Thanxx for using Whatsapp Clone by :) Govind verma (:')">log
+                    out</a></li>
         </div>
     </div>
+
+    <!-- ---------menu 2------------------------------ -->
+
     <div class="two">
         <div class="chat-menu2">
             <li><a href="#">contact info</a></li>
@@ -361,12 +492,16 @@
             <li><a href="#">block</a></li>
             <li><a href="#">select messages</a></li>
             <li><a href="#">mute notifications</a></li>
-            <li><a href="https://www.google.com/" onclick="alert('Successfully loged out. Thanxx for using Whatsapp Clone by :) Govind verma (:')">close chat</a></li>
+            <li><a href="https://www.google.com/"
+                    onclick="alert('Successfully loged out. Thanxx for using Whatsapp Clone by :) Govind verma (:')">close
+                    chat</a></li>
             <li><a href="#">disappering messages</a></li>
             <li><a href="#">clear messages</a></li>
             <li><a href="#">delete chat</a></li>
         </div>
     </div>
+
+    <!-- ------------search box hidden----------------- -->
 
     <div class="search-box-hidden">
         <div class="search-icon2">
