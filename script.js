@@ -27,6 +27,12 @@ var status_update = document.querySelector("#status")
 var mobile = document.querySelector("#mobile")
 var email = document.querySelector("#email")
 var website = document.querySelector("#website")
+var notification_btn = document.querySelector("#notification-btn")
+var notification_page = document.querySelector(".notification")
+var notification_icon = document.querySelector("#hide_notification")
+var privacy_btn = document.querySelector("#privacy-btn")
+var privacy_icon = document.querySelector("#hide_privacy")
+var privacy_page = document.querySelector(".privacy")
 
 
 
@@ -181,4 +187,26 @@ website_edit.addEventListener("click", function () {
         website.contentEditable = "false";
         website_edit.style.color = "black";
     }
+})
+
+// -------------------------------notification page show--------------------//
+
+notification_btn.addEventListener("click", function () {
+    notification_page.style.display = "block";
+
+});
+
+notification_icon.addEventListener("click", function () {
+    notification_page.style.display = "none";
+})
+
+// ------------------------------privacy page -------------------------------//
+
+privacy_btn.addEventListener("click", function () {
+    privacy_page.style.display = "block";
+
+});
+
+privacy_icon.addEventListener("click", function () {
+    privacy_page.style.display = "none";
 })

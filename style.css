@@ -219,7 +219,7 @@ footer{
     padding: 10px 20px;
     border-radius: 7px;
     font-size: 20px;
-    width: 65%;
+    width: 50%;
 }
 
 .footer-icons i{
@@ -426,13 +426,18 @@ display: none;
 }
 
 .profile-user-info{
-    width: 40%;
+    width: 60%;
     cursor: pointer;
-    /* background-color: red; */
+    color: rgb(63, 61, 61);
+    font-size: 15px;
+}
+.profile-user-info>p{
+    font-size: 12px;
+    padding-top: 5px;
 }
 
 .profile-edit-area i{
-    color:black;
+    color:#a6a9ac;
     cursor: pointer;
 }
 #profile-about{
@@ -455,15 +460,19 @@ display: none;
     width: 38%;
     height: 82vh;
     background-color: white;
-    transition: .9s;
+    transition: .5s;
     display: none;
     overflow: scroll;
 }
+.setting-abouts{
+    font-size: 13px;
+}
+
 .settings-head{
     background-color: rgb(43, 158, 43);
     height: 90px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding-bottom: 20px;
 }
 .setting-info-area{
@@ -478,7 +487,7 @@ display: none;
 }
 .st-head{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .settings i{
@@ -492,7 +501,6 @@ display: none;
 }
 .settings-edit-area{
     display: flex;
-    justify-content: space-between;
     padding: 14px;
     margin-bottom: 1px;
     transition: .3s;
@@ -501,19 +509,14 @@ display: none;
     background-color: rgba(170, 169, 169, 0.423);
 }
 .settings-edit-area i{
-    color: gray;
-    margin-left: 20px;
+    color:#a6a9ac;
     font-size: 20px;
 }
-.heading{
-    width: 300px;
-    position: relative;
-    right:20%;
-}
+
 .settings-heading{
     color: rgb(63, 61, 61);
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
     transition: .3s;
     cursor: pointer;
 }
@@ -522,16 +525,122 @@ display: none;
 }
 
 
+/* -------------------------------notification zone --------------- */
 
 
 
+.notification{
+    position: absolute;
+    top: 15.5%;
+    width: 40%;
+    height: 82vh;
+    background-color: white;
+    transition: .5s;
+    display: none;
+}
+.notification-abouts{
+    font-size: 13px;
+}
+
+.notification-head{
+    background-color: rgb(43, 158, 43);
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.nt-head{
+    color: white;
+    font-size: 25px;
+}
+.notification i{
+    margin:0px 20px;
+    font-size: 25px;
+    color: white;
+    transition: .3s;
+ }
+ .notification i:hover{
+     color: blue;
+ }
+.notification>h3{
+    color: green;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+ .sec1{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    margin-bottom: 2px;
+    background-color: rgba(231, 230, 230, 0.378);
+ }
+ .sec1-heading{
+    width: 250px;
+    text-align: left;
+    font-size: 15px;
+ }
+ .sec1-heading>p{
+    font-size: 12px;
+ }
+ .sec1 input{
+    width: 25px;
+    height: 25px;
+ }
+ #sound{
+    margin-top: 50px;
+    padding: 40px 0px;
+ }
 
 
+/* -----------------------------------privacy---------------------------- */
 
+.privacy{
+    position: absolute;
+    top: 15.5%;
+    width: 40%;
+    height: 82vh;
+    background-color: white;
+    transition: .5s;
+    overflow: scroll;
+    display: none;
+}
+.privacy-abouts{
+    font-size: 13px;
+}
 
+.privacy-head{
+    background-color: rgb(43, 158, 43);
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.prcy-head{
+    color: white;
+    font-size: 25px;
+}
 
+.privacy i{
+    margin:0px 20px;
+    font-size: 25px;
+    color: white;
+    transition: .3s;
+ }
+ .privacy i:hover{
+     color: blue;
+ }
 
-
+ .privacy>h3{
+    color: green;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.privacy >.sec1 >i{
+    color: black;
+}
 
 
 
@@ -650,6 +759,9 @@ a{
     footer{
         width: 69%;
     }
+    .footer-icons input{
+        width: 65%;
+    }
 
     .pop_for_threedot{
         background-color: white;
@@ -670,6 +782,9 @@ a{
     }
     .settings{
         width: 29%;
+    }
+    .notification{
+        width: 30%;
     }
     
 }

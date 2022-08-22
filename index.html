@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Ubuntu:wght@500&display=swap"rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
     <title>Whatsapp</title>
     <link rel="icon" href="wp-removebg-preview.png" id="till">
 </head>
@@ -91,56 +93,128 @@
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-bell"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">notifications</h2>
-                    </div>
+                    <h2 class="settings-heading" id="notification-btn">notifications</h2>
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-lock"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">privacy</h2>
-                    </div>
+                    <h2 class="settings-heading" id="privacy-btn">privacy</h2>
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-shield"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">security</h2>
-                    </div>
+                    <h2 class="settings-heading">security</h2>
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-user"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">theme</h2>
-                    </div>
+                    <h2 class="settings-heading">theme</h2>
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-image"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">chat wallpaper</h2>
-                    </div>
+                    <h2 class="settings-heading">chat wallpaper</h2>
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-user"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">request account info</h2>
-                    </div>
+                    <h2 class="settings-heading">request account info</h2>
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-keyboard-o"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">keyboard shortcut</h2>
-                    </div>
+                    <h2 class="settings-heading">keyboard shortcut</h2>
                 </div>
                 <div class="settings-edit-area">
                     <i class="fa fa-question-circle"></i>
-                    <div class="heading">
-                        <h2 class="settings-heading">help</h2>
-                    </div>
+                    <h2 class="settings-heading">help</h2>
                 </div>
             </div>
 
+            <!-- -------------------------notification------------- -->
+            <div class="notification">
+                <div class="notification-head">
+                    <i class="fa fa-arrow-left" id="hide_notification"></i>
+                    <h2 class="nt-head">notifications</h2>
+                </div>
+                <h3>message</h3>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>message notification</h3>
+                    <p>show notification for new messages</p>
+                    </div>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>show preview</h3>
+                    </div>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>show reaction notification</h3>
+                    </div>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div class="sec1" id="sound">
+                    <div class="sec1-heading">
+                    <h3>sound</h3>
+                    </div>
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
 
-<!-- ---------------------------contact box zone --------------------------- -->
+            <!-- ------------------------privacy ---------------------- -->
+
+            <div class="privacy">
+                <div class="privacy-head">
+                    <i class="fa fa-arrow-left" id="hide_privacy"></i>
+                    <h2 class="prcy-head">privacy</h2>
+                </div>
+                <h3>who can see my personal info</h3>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>last seen</h3>
+                    <p>my contacts</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>profile photo</h3>
+                    <p>my contacts</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>about</h3>
+                    <p>my contacts</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>message notification</h3>
+                    <p>if turned off ,you wont't send or receive read receipts.</p>
+                    </div>
+                   <input type="checkbox" name="" id="">
+                </div>
+
+                <h3>disappering messages</h3>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>default message time</h3>
+                    <p>off</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="sec1">
+                    <div class="sec1-heading">
+                    <h3>blocked</h3>
+                    <p>21</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                
+            </div>
+
+            <!-- ---------------------------contact box zone --------------------------- -->
 
             <div class="contact-box-fixed">
                 <nav class="contact-box-nav">
