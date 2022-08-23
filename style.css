@@ -364,10 +364,10 @@ display: none;
     position: absolute;
     top: 15.5%;
     width: 38%;
-    height: 81.5vh;
+    height: 82.5vh;
     background-color: white;
     transition: .9s;
-    overflow: scroll;
+    /* overflow: scroll; */
     display: none;
 }
 .profile-head{
@@ -462,7 +462,6 @@ display: none;
     background-color: white;
     transition: .5s;
     display: none;
-    overflow: scroll;
 }
 .setting-abouts{
     font-size: 13px;
@@ -725,7 +724,158 @@ a{
     font-size: 10px;
 }
 
+
+.profile{
+    width: 40%;
+    height: 85vh;
+    overflow: scroll;
 }
+.picture-area img{
+    width: 70px;
+    height: 70px;
+    top: 70%;
+}
+.profile-user-info{
+    font-size: 12px;
+    width: 40%;
+}
+.profile-user-info>p{
+    font-size: 10px;
+}
+
+#profile-about{
+    right: 10%;
+    font-size: 9px;
+}
+#profile-info-about i{
+    font-size: 20px;
+    margin-top: 10px;
+ }
+
+
+
+ .settings{
+    width: 40%;
+    height: 85vh;
+    overflow: scroll;
+}
+.setting-info-area img{
+    width: 60px;
+    height: 60px;
+}
+.settings-edit-area i{
+    font-size: 15px;
+}
+
+.settings-heading{
+    font-size: 10px;
+}
+.setting-abouts{
+    margin-left: -8px;
+}
+.setting-abouts>h1{
+    font-size: 12px;
+}
+.setting-abouts>p{
+    font-size: 7px;
+}
+
+.notification{
+    width: 40%;
+    height: 85vh;
+}
+
+.notification-abouts{
+    font-size: 13px;
+}
+
+.nt-head{
+    color: white;
+    font-size: 20px;
+}
+.notification i{
+    margin:0px 10px;
+    font-size: 20px;
+ }
+
+ .notification>h3{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.sec1{
+    padding: 15px 0px;
+    margin-bottom: 2px;
+ }
+.sec1-heading{
+    width: 150px;
+    font-size: 10px;
+ }
+ .sec1-heading>p{
+    font-size: 8px;
+ }
+ .sec1 input{
+    width: 15px;
+    height: 15px;
+ }
+ #sound{
+    margin-top: 20px;
+    padding: 40px 0px;
+ }
+
+
+ 
+.privacy{
+    width: 40%;
+    height: 85vh;
+}
+.privacy-abouts{
+    font-size: 9px;
+}
+
+.prcy-head{
+    font-size: 20px;
+}
+.privacy i{
+    font-size: 20px;
+ }
+
+ .privacy>h3{
+    margin-left: 10px;
+    font-size: 10px;
+}
+.sec1 >.sec1-heading{
+    padding-left: 5px;
+}
+
+.pop_for_threedot{
+    top: 9%;
+    left: 6%;
+}
+.pop_for_threedot li a{
+    font-size: 10px;
+}
+
+.chat-menu2 li a{
+    font-size: 10px;
+}
+.chat-menu2 li{
+    list-style: none;
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width:1200px) {
     .title{
@@ -776,14 +926,13 @@ a{
     .profile{
         width: 29%;
     }
-
-    .profile-user-info{
-        margin-left: -70px;
-    }
     .settings{
         width: 29%;
     }
     .notification{
+        width: 30%;
+    }
+    .privacy{
         width: 30%;
     }
     
