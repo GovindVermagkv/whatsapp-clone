@@ -134,26 +134,26 @@
                 <h3>message</h3>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>message notification</h3>
-                    <p>show notification for new messages</p>
+                        <h3>message notification</h3>
+                        <p>show notification for new messages</p>
                     </div>
                     <input type="checkbox" name="" id="">
                 </div>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>show preview</h3>
+                        <h3>show preview</h3>
                     </div>
                     <input type="checkbox" name="" id="">
                 </div>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>show reaction notification</h3>
+                        <h3>show reaction notification</h3>
                     </div>
                     <input type="checkbox" name="" id="">
                 </div>
                 <div class="sec1" id="sound">
                     <div class="sec1-heading">
-                    <h3>sound</h3>
+                        <h3>sound</h3>
                     </div>
                     <input type="checkbox" name="" id="">
                 </div>
@@ -169,49 +169,49 @@
                 <h3>who can see my personal info</h3>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>last seen</h3>
-                    <p>my contacts</p>
+                        <h3>last seen</h3>
+                        <p>my contacts</p>
                     </div>
                     <i class="fa fa-angle-right"></i>
                 </div>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>profile photo</h3>
-                    <p>my contacts</p>
+                        <h3>profile photo</h3>
+                        <p>my contacts</p>
                     </div>
                     <i class="fa fa-angle-right"></i>
                 </div>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>about</h3>
-                    <p>my contacts</p>
+                        <h3>about</h3>
+                        <p>my contacts</p>
                     </div>
                     <i class="fa fa-angle-right"></i>
                 </div>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>message notification</h3>
-                    <p>if turned off ,you wont't send or receive read receipts.</p>
+                        <h3>message notification</h3>
+                        <p>if turned off ,you wont't send or receive read receipts.</p>
                     </div>
-                   <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
                 </div>
 
                 <h3>disappering messages</h3>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>default message time</h3>
-                    <p>off</p>
+                        <h3>default message time</h3>
+                        <p>off</p>
                     </div>
                     <i class="fa fa-angle-right"></i>
                 </div>
                 <div class="sec1">
                     <div class="sec1-heading">
-                    <h3>blocked</h3>
-                    <p>21</p>
+                        <h3>blocked</h3>
+                        <p>21</p>
                     </div>
                     <i class="fa fa-angle-right"></i>
                 </div>
-                
+
             </div>
 
             <!-- ---------------------------contact box zone --------------------------- -->
@@ -228,12 +228,12 @@
                 <div class="search-area">
                     <div class="search-icon">
                         <i class="fa fa-search"></i>
-                        <input type="text" placeholder="search or start new chat">
+                        <input type="text" placeholder="search or start new chat" id="myInput" onkeyup="search()">
                     </div>
                 </div>
             </div>
 
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <div class="contact-list">
                     <img src="govind.png" alt="">
                     <div class="title">
@@ -302,7 +302,23 @@
                 <div class="contact-list">
                     <img src="govind.png" alt="">
                     <div class="title">
-                        <h3>govind verma</h3>
+                        <h3>Versha ji</h3>
+                        <p>Govind : kaise ho</p>
+                    </div>
+                    <p>10:06 pm</p>
+                </div>
+                <div class="contact-list">
+                    <img src="govind.png" alt="">
+                    <div class="title">
+                        <h3>Saloni rawat</h3>
+                        <p>Govind : kaise ho</p>
+                    </div>
+                    <p>10:06 pm</p>
+                </div>
+                <div class="contact-list">
+                    <img src="govind.png" alt="">
+                    <div class="title">
+                        <h3>Rajesh saini</h3>
                         <p>rajesh : kaise ho</p>
                     </div>
                     <p>10:06 pm</p>
@@ -310,7 +326,15 @@
                 <div class="contact-list">
                     <img src="govind.png" alt="">
                     <div class="title">
-                        <h3>govind verma</h3>
+                        <h3>Vasant sir</h3>
+                        <p>govind : kaise ho</p>
+                    </div>
+                    <p>10:06 pm</p>
+                </div>
+                <div class="contact-list">
+                    <img src="govind.png" alt="">
+                    <div class="title">
+                        <h3>vaibhav sir</h3>
                         <p>rajesh : kaise ho</p>
                     </div>
                     <p>10:06 pm</p>
@@ -318,7 +342,7 @@
                 <div class="contact-list">
                     <img src="govind.png" alt="">
                     <div class="title">
-                        <h3>govind verma</h3>
+                        <h3>Aircampus may batch</h3>
                         <p>rajesh : kaise ho</p>
                     </div>
                     <p>10:06 pm</p>
@@ -326,32 +350,8 @@
                 <div class="contact-list">
                     <img src="govind.png" alt="">
                     <div class="title">
-                        <h3>govind verma</h3>
-                        <p>rajesh : kaise ho</p>
-                    </div>
-                    <p>10:06 pm</p>
-                </div>
-                <div class="contact-list">
-                    <img src="govind.png" alt="">
-                    <div class="title">
-                        <h3>govind verma</h3>
-                        <p>rajesh : kaise ho</p>
-                    </div>
-                    <p>10:06 pm</p>
-                </div>
-                <div class="contact-list">
-                    <img src="govind.png" alt="">
-                    <div class="title">
-                        <h3>govind verma</h3>
-                        <p>rajesh : kaise ho</p>
-                    </div>
-                    <p>10:06 pm</p>
-                </div>
-                <div class="contact-list">
-                    <img src="govind.png" alt="">
-                    <div class="title">
-                        <h3>govind verma</h3>
-                        <p>rajesh : kaise ho</p>
+                        <h3>Sawaraj sir</h3>
+                        <p>Govind : kaise ho</p>
                     </div>
                     <p>10:06 pm</p>
                 </div>
@@ -551,9 +551,7 @@
             <li><a href="#">catalog</a></li>
             <li><a href="#">starred messages</a></li>
             <li><a href="#" id="settings">settings</a></li>
-            <li><a href="https://www.google.com/"
-                    onclick="alert('Successfully loged out. Thanxx for using Whatsapp Clone by :) Govind verma (:')">log
-                    out</a></li>
+            <li><a href="https://www.google.com/" onclick="alert('Successfully loged out. Thanxx for using Whatsapp Clone by :) Govind verma (:')">logout</a></li>
         </div>
     </div>
 

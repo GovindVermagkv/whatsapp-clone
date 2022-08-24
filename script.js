@@ -78,28 +78,28 @@ contact_list.onclick = function titlename() {
 
 three_dot1.onclick = function () {
     console.log("menu option clicked");
-    if (one.style.display == "none") {
+    if (one.style.display == "block") {
         console.log("if targated");
-        one.style.display = "block";
-        three_dot1.style.color = "white"
+        one.style.display = "none";
+        three_dot1.style.color = "black"
     }
     else {
-        one.style.display = "none";
+        one.style.display = "block";
         console.log("else targate");
-        three_dot1.style.color = "black";
+        three_dot1.style.color = "white";
     }
 }
 
 
 
 menu2.onclick = function () {
-    if (two.style.display == "none") {
-        two.style.display = "block";
-        menu2.style.color = "white";
-    }
-    else {
+    if (two.style.display == "block") {
         two.style.display = "none";
         menu2.style.color = "black";
+    }
+    else {
+        two.style.display = "block";
+        menu2.style.color = "white";
     }
 }
 
@@ -210,3 +210,24 @@ privacy_btn.addEventListener("click", function () {
 privacy_icon.addEventListener("click", function () {
     privacy_page.style.display = "none";
 })
+
+
+
+//---------------------------search section ----------------------------------///
+
+function search() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("contacts");
+    li = ul.getElementsByTagName("div");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("h3")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
